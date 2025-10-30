@@ -1,7 +1,6 @@
 //Define All the Pins
 #define PIN_FLASH      0  //use for Hard Reset
 //#define LED1           5  // D1 GPIO5 another pin for 3.3v
-// LED 長腳接 ESP32 的 GPIO 23。LED 短腳接一個 330 歐姆的電阻，電阻另一端接 Arduino GND。
 #define LED1           36
 
 //Sensor Part
