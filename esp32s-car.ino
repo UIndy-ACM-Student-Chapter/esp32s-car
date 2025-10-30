@@ -111,8 +111,8 @@ void setup() {
   //String esid  = Device::readSSID();
   //String epass = Device::readPwd();
 
-  String esid  = "ardlink";
-  String epass = "2139851899";
+  String esid  = "uindy-acm";
+  String epass = "acm@pass126";
 
   log(Device::readSSID(), SERIAL_LOG, DEBUG);
   log(Device::readPwd(), SERIAL_LOG, DEBUG);
