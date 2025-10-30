@@ -125,7 +125,7 @@ void setup() {
           espMode = ESP_ON_STA_MODE;
           Serial.println("Before launch Web Server start connection...");
           //get the start server timestamp
-          delay(10);
+          delay(20);
           startServerTimestamp = getServerTimestamp();
           startLocalTimestamp = millis();
           log("SERVER Start TS:" + String(startServerTimestamp), SERIAL_LOG, PRODUCTION);
@@ -165,7 +165,6 @@ void initialized() {
 //    deleteFile(SD, "/acc_data.bak");
 //    renameFile(SD, SDFilename, "/acc_data.bak");
 //    appendFile(SD, SDFilename, "xg, yg, zg");
-   
 // }
 
 bool tryConnect(void) {
@@ -195,7 +194,7 @@ void setupAP(void) {
   String ssid = "LAWIFI-" + postMac;
   //String password = "SDWIFI-" + postMac;
 
-  delay(100);
+  delay(1000);
   //WiFi.softAP(ssid, passphrase, 6);
   WiFi.mode(WIFI_AP_STA);
   WiFi.softAP(ssid.c_str());
